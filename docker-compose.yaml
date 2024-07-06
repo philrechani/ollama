@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ollamaenv:
+    build: ollamaService
+    image: phil-rechani/ollama
+    command: tail -f /dev/null
+    tty: true
+    stdin_open: true
